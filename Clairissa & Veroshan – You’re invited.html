@@ -13,10 +13,7 @@
   box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
   color-scheme:light;
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){--bg:#2f332b;--ink:#ece6d8;--card:#383d33;--line:#55594b;--gold:#d3b072;color-scheme:dark}
-}
-:root[data-theme="dark"]{--bg:#2f332b;--ink:#ece6d8;--card:#383d33;--line:#55594b;--gold:#d3b072;color-scheme:dark}
+/* Always light: the invitation keeps its beige palette on every device */
 html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
 *{box-sizing:border-box}
 body{-webkit-text-size-adjust:100%;margin:0;background:var(--bg);color:var(--ink);font-family:Jost,system-ui,sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
